@@ -1,0 +1,17 @@
+<!-- START _includes/article.html -->
+<article>
+	<header>
+		<h1><a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a></h1>
+		<time>{{ page.date | date: "%d %B %Y" }}</time>
+	</header>
+		<div class="content">
+			{{ content | excerpt }}
+			{% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
+			{% if excerpted == 'true' %} <a href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a> {% endif %}
+		</div>
+	<footer>
+		{% include post/categories.html %}
+		{% if page.source.url %}via <a href="{{ page.source.url }}">{{ page.source.title }}</a>{% endif %}
+	</footer>
+</article>
+<!-- END _includes/article.html -->
