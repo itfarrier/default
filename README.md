@@ -1,6 +1,6 @@
 # Very simple, pure and responsive theme.
 
-Inspired by Pageturner (https://github.com/elisehein/Pageturner).
+Inspired by Poole (http://getpoole.com). Version 2.
 
 ## Demo.
 
@@ -11,7 +11,3 @@ http://podabed.org
 From your Octopress root directory:
 
 	# git clone https://github.com/podabed/default.git .themes/default && rake install['default'] && rake generate && rake preview
-
-## Settings
-
-`sass/_variables.scss` allows for a lot of customization.

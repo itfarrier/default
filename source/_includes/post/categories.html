@@ -13,14 +13,12 @@
 {% if post.author %}
 on
 {% else %}
-Tags:
 {% endif %}
 {{ post.categories | category_links }}
 {% else %}
 {% if page.author %}
 on
 {% else %}
-Tags:
 {% endif %}
 {{ page.categories | category_links }}
 {% endif %}

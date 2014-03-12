@@ -1,0 +1,204 @@
+// PT fonts import.
+
+@import url("http://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,400italic,700,700italic|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic,cyrillic-ext,latin-ext");
+
+// Variables.
+
+$ser: "PT Serif", serif;
+
+$san: "PT Sans", sans-serif;
+
+$mon: "PT Mono", monospace;
+
+$b: #000;
+
+$g: #d3d3d3;
+
+$w: #fff;
+
+// Selection properties.
+
+*::selection {
+  background: $b;
+  color: $w;
+}
+
+*::-moz-selection {
+  background: $b;
+  color: $w;
+}
+
+*::-webkit-selection {
+  background: $b;
+  color: $w;
+}
+
+// Responsives.
+
+@media (min-width: 38rem) { html { font-size: 20px; } }
+
+@media (min-width: 30rem) {
+  .pagination-item {
+    float: left;
+    width: 50%;
+  }
+  blockquote {
+  padding-right: 5rem;
+  padding-left: 1.25rem;
+  }
+}
+
+// Header and footer.
+
+footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid $g;
+  font-size: .5rem;
+}
+
+footer,
+header { text-align: center; }
+
+// Navigation.
+
+header > nav {
+  padding-bottom: .5rem;
+  border-bottom: 1px solid $g;
+}
+
+body > nav {
+  overflow: hidden;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  text-align: center;
+  font-family: $san;
+}
+
+.pagination-item {
+  display: block;
+  padding: 1rem;
+}
+
+a {
+  border-bottom: 1px dotted;
+  color: $b;
+  text-decoration: none;
+  &:hover,
+  &:active { border-bottom: 1px solid; }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $w;
+  color: $b;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-family: $ser;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-width: 1024px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $san;
+  line-height: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt { font-weight: bold; }
+
+dd { margin-bottom: .5rem; }
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid $g;
+  border-bottom: 1px solid $g;
+}
+
+abbr {
+  color: $b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 85%;
+}
+
+abbr[title] { cursor: help; }
+
+blockquote {
+  margin: .8rem 0;
+  padding: .5rem 1rem;
+  border-left: .25rem solid $g;
+  color: $b;
+}
+
+blockquote p:last-child { margin-bottom: 0; }
+
+img {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  align: center;
+}
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid $b;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid $b;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th { background-color: $w; }
+
+section { padding-top: 4rem; }
+
+time {
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  font-family: $san;
+}
+
+.categories {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: left;
+  font-family: $san;
+}
